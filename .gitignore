@@ -1,0 +1,12 @@
+node_modules/
+.next/
+.next-admin/
+.next-customer/
+data/*.db
+data/*.db-journal
+data/*.db-wal
+data/*.db-shm
+public/uploads/*
+!public/uploads/.gitkeep
+.env.local
+.DS_Store

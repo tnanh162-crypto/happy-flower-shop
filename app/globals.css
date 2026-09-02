@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F6F1E9;
+  background-image: repeating-linear-gradient(
+    122deg,
+    #F6F1E9 0,
+    #F6F1E9 180px,
+    #EEF5F4 290px,
+    #D9EAF1 410px,
+    #C4DFE9 530px,
+    #F6F1E9 700px
+  );
+  background-attachment: fixed;
+  color: #203640;
+}
+
+::selection {
+  background-color: #C2DAE5;
+  color: #2E2A25;
+}
+
+:focus-visible {
+  outline: 2px solid #6693AD;
+  outline-offset: 2px;
+}
+
+.container-shop {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #2C5F7C;
+  color: #F6F1E9;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background-color 150ms ease, transform 150ms ease;
+}
+.btn-primary:hover {
+  background-color: #203640;
+}
+.btn-primary:active {
+  transform: scale(0.98);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #2C5F7C;
+  border: 1.5px solid #659BB7;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 500;
+  transition: background-color 150ms ease, border-color 150ms ease;
+}
+.btn-secondary:hover {
+  border-color: #2C5F7C;
+  color: #203640;
+}
