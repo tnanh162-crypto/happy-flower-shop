@@ -6,6 +6,7 @@
     "dev": "next dev",
     "dev:customer": "cross-env NEXT_DIST_DIR=.next-customer next dev -p 3000",
     "dev:admin": "cross-env NEXT_DIST_DIR=.next-admin next dev -p 3001",
+    "auto-sync": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/auto-sync.ps1",
     "build": "next build",
     "start": "next start",
     "seed": "node scripts/seed.js"
